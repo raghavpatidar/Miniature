@@ -1,0 +1,44 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    max-width: 470px;
+    /* margin: ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    max-width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+ul::-webkit-scrollbar {
+    background: transparent;
+    /* make scrollbar transparent */
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+}
+
+ul li {
+    color: #fff;
+    padding: 8px;
+    border-radius: 100%;
+    margin: 0 4px;
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+}
+
+button {
+    border: 0;
+    color: blueviolet;
+    font-size: 24px;
+    margin: 0 8px;
+    background-color: burlywood;
+}
