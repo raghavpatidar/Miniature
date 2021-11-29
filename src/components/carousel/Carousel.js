@@ -13,7 +13,7 @@ import srcimg1 from '../../assets/DSC08785.JPG'
 // }
 
 var React = require('react');
-var ReactDOM = require('react-dom');
+// var ReactDOM = require('react-dom');
 // var Carousel = require('react-responsive-carousel').Carousel;
 
 const DemoCarousel = () => {

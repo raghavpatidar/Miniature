@@ -8,6 +8,7 @@ const AdminHome = () => {
         <>
             <NavBar></NavBar>
             <div className='tags '>
+                <p className='item'> Admin's page</p>
                 <ItemList></ItemList>
             </div>
             <AdminTags></AdminTags>

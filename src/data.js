@@ -272,20 +272,56 @@ const food = [
         name: "Maggi",
         item: [
             {
-                itemName: "Chocolate Bowl",
-                price: 249,
+                itemName: "Masala Maggi",
+                price: 60,
                 bestseller: false,
                 veg: true
             },
             {
-                itemName: "Hot sizzling Browine",
-                price: 197,
+                itemName: "Veg Maggi",
+                price: 65,
                 bestseller: false,
                 veg: true
             },
             {
-                itemName: "Ice cream scoop",
-                price: 67,
+                itemName: "Cheese Butter Maggi",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Mayo Maggi",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Tandoori Maggi",
+                price: 90,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Corn Maggi",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Punjabi Tadka Maggi",
+                price: 90,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "White Sauce Maggi",
+                price: 100,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Cheese Burst Maggi",
+                price: 120,
                 bestseller: false,
                 veg: true
             },
@@ -293,28 +329,222 @@ const food = [
 
     },
     {
-        name: "Dessert",
+        name: "Pasta",
         item: [
             {
-                itemName: "Chocolate Bowl",
-                price: 249,
+                itemName: "White Sauce Pasta",
+                price: 100,
                 bestseller: false,
                 veg: true
             },
             {
-                itemName: "Hot sizzling Browine",
-                price: 197,
+                itemName: "Red Sauce Pasta",
+                price: 100,
                 bestseller: false,
                 veg: true
             },
             {
-                itemName: "Ice cream scoop",
-                price: 67,
+                itemName: "Cheese Corn Pasta",
+                price: 120,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Mix Pasta",
+                price: 120,
                 bestseller: false,
                 veg: true
             },
         ]
-    }
+    },
+    {
+        name: "Snacks",
+        item: [
+            {
+                itemName: "Cheese Garlic Bread",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Veg Cheese Garlic Bread",
+                price: 90,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Maxican Garlic Bread",
+                price: 100,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "French Fries",
+                price: 60,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Peri Peri French Fries",
+                price: 70,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Masala French Fries",
+                price: 65,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Hot Dog",
+                price: 100,
+                bestseller: false,
+                veg: true
+            },
+        ]
+    },
+    {
+        name: "Mojitos/Shakes",
+        item: [
+            {
+                itemName: "Classic Mint Mojito",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Green Apple Cooler Mojito",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Kiwi Mojito",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Blue Lagoon Mojito",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Chocolate Shake",
+                price: 90,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Oreo Chocolate Shake",
+                price: 100,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Kit-Kat Shake",
+                price: 100,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Vanila Shake",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Chocolate Browine Shake",
+                price: 110,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Caramel Shake",
+                price: 100,
+                bestseller: false,
+                veg: true
+            },
+        ]
+    },
+    {
+        name: "Burgers",
+        item: [
+            {
+                itemName: "Aloo Tikki Burger",
+                price: 50,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Veg Burger",
+                price: 60,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Cheese Burger 70",
+                price: 70,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Mayo Burger",
+                price: 70,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Chilli Cheese Garlic",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Mexican Burger",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+        ]
+    },
+    {
+        name: "Chinese",
+        item: [
+            {
+                itemName: "Crispy Corn",
+                price: 90,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Veg Noodles",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Hakka Noodles",
+                price: 80,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Schezwan Noodles",
+                price: 90,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemName: "Chilli Panner",
+                price: 130,
+                bestseller: false,
+                veg: true
+            },
+        ]
+    },
 ]
 
 export default food;

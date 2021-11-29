@@ -1,6 +1,7 @@
 
-import react from 'react'
+import React from 'react'
 import App from './App';
+import Context from './context/Context';
 
 import {
     BrowserRouter,
@@ -10,9 +11,11 @@ import {
 
 const reactDom = require('react-dom');
 function Restaurant() {
-    return <section>
-        <App></App>
-    </section>
+    return <React.StrictMode>
+        <Context>
+            <App />
+        </Context>
+    </React.StrictMode>
 }
 
 reactDom.render(<Restaurant />, document.getElementById('root'));

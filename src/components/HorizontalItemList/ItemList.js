@@ -1,17 +1,15 @@
 import "./styles.css";
-import data from "./fruits.json";
+// import data from "./fruits.json";
 import Tag from "./SpecificItem";
 import { useState, useRef } from "react";
 import gsap from "gsap";
-import fooddata from '../../data'
-
-
+import { CartState } from "../../context/Context";
 export default function ItemList() {
+    const { state: { products } } = CartState();
+    const fooddata = products;
     let scrl = useRef(null);
     const [scrollX, setscrollX] = useState(0);
     const [scrolEnd, setscrolEnd] = useState(false);
-
-    //Slide click
     const slide = (shift) => {
         scrl.current.scrollLeft += shift;
         setscrollX(scrollX + shift);
@@ -25,8 +23,6 @@ export default function ItemList() {
             setscrolEnd(false);
         }
     };
-
-    //Anim
     const anim = (e) => {
         gsap.from(e.target, { scale: 1 });
         gsap.to(e.target, { scale: 1.5 });

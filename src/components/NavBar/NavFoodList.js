@@ -1,7 +1,8 @@
 import React from "react";
-import foodData from '../../data'
-
+import { CartState } from '../../context/Context'
 const NavFoodList = () => {
+    const { state: { products } } = CartState();
+    const foodData = products;
     const name = "sandwich"
     console.log(foodData);
     return (
@@ -18,7 +19,6 @@ const NavFoodList = () => {
         </div>
     )
 }
-
 const Item = (props) => {
     return (
         <li className="nav-item ">

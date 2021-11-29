@@ -579,7 +579,20 @@ hr {
     /* text-align: center; */
 }
 
-.modify-btn{
+.modify-btn {
     background-color: burlywood;
     color: black;
+}
+
+.emptycart {
+    padding-top: 10%;
+    padding-bottom: 100%;
+    text-align: center;
+    background-color: #ffffff;
+
+}
+
+.bold{
+    font-weight: bolder;
+    font-size: x-large;
 }

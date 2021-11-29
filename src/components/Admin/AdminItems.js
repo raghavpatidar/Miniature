@@ -1,18 +1,18 @@
 import React from "react";
-import food from "../../data";
-import foodData from '../../data'
-import { useState } from "react";
+// import food from "../../data";
+// import foodData from '../../data'
+// import { useState } from "react";
 // import { AddShoppingCartIcon } from '@mui/icons-material';
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import logo from '../../assets/cafelogo.png'
+// import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+// import logo from '../../assets/cafelogo.png'
 import veg from '../../assets/veg.png'
 import nonveg from '../../assets/non-veg.png'
-import bs from '../../assets/bestseller1.png'
+// import bs from '../../assets/bestseller1.png'
 import EditIcon from '@mui/icons-material/Edit';
-import BasicModal from "./Modal";
+// import BasicModal from "./Modal";
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+// import Button from '@mui/material/Button';
+// import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import ChangeForm from "./changeForm,";
 
@@ -30,9 +30,9 @@ const style = {
     p: 4,
 };
 
-const styleM = {
-    background: 'transparent',
-}
+// const styleM = {
+//     background: 'transparent',
+// }
 const BestSeller = (props) => {
     const isbest = props.best;
     if (isbest) {
@@ -63,9 +63,9 @@ const Items = (props) => {
                 if (!isveg) {
                     srcimg = nonveg
                 }
-                const bestSeller = item.bestSeller;
-                const name = item.itemName;
-                const price = item.price;
+                // const bestSeller = item.bestSeller;
+                // const name = item.itemName;
+                // const price = item.price;
                 // console.log("kings data")
                 // console.log(name, price, bestSeller);
                 return (

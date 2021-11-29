@@ -1,20 +1,19 @@
 import React, { useState } from "react";
-import { MDBContainer, MDBInputGroup } from "mdbreact";
-import { Link } from "react-router-dom";
+// import { MDBContainer, MDBInputGroup } from "mdbreact";
+// import { Link } from "react-router-dom";
 
 const ChangeForm = (props) => {
 
     // const [dishName, setDishName] = useState('');
+    const item = props.item;
+    console.log(item);
     const [itemDetail, setDetail] = useState({
-        dishName: "Sandwich",
-        price: 120,
-        veg: true,
-        bestSeller: false
+        dishName: item.itemName,
+        price: item.price,
+        veg: item.veg,
+        bestSeller: item.bestSeller
     })
-    console.log("form data \n" + props.item);
-
-
-
+    // console.log("form data \n" + props.item);
     const handelChange = (e) => {
         const name = e.target.name
         const value = e.target.value

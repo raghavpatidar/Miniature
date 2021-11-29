@@ -1,8 +1,8 @@
 import React from "react";
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+// import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import logo from '../../assets/cafelogo.png'
 
-import { Avatar } from "@mui/material";
+// import { Avatar } from "@mui/material";
 import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -29,8 +29,9 @@ const Contact = () => {
     return (
         <div id='contact'>
             <div className='contact'>
-                <h3 href='mailto:theminiaturcafe@gmail.com' className='btn'><EmailIcon />Email US</h3>
-                <h3 hre='www.instagram.com' className='btn'><InstagramIcon />Instagram</h3>
+                <a href='mailto:theminiaturcafe@gmail.com' className='btn'><EmailIcon />Email US</a>
+                {/* <a href='www.google.com' className='btn'><EmailIcon />Email US</a> */}
+                <a href='www.instagram.com' className='btn'><InstagramIcon />Instagram</a>
                 <h3><LocationOnIcon />17- Abhir colony, Gamle Wali Puliya , Rajendra Nagar , Indore</h3>
             </div>
             <hr></hr>

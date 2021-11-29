@@ -1,7 +1,7 @@
 import React from "react";
 import foodData from '../../data'
 import Item from './AdminItems'
-import Cart from '../Cart/Cart'
+// import Cart from '../Cart/Cart'
 
 
 

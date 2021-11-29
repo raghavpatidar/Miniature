@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "../../assets/cafelogo.png"
 import '../../css/App.css'
-
 import NavbarSlider from './NavbasSlider'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
+import { Link } from "react-router-dom";
+import { CartState } from "../../context/Context";
 
 const NavBar = () => {
     return (
@@ -32,12 +32,16 @@ const Headerlogo = () => {
     )
 }
 const TogglerButton = () => {
+    const { state: { cart } } = CartState();
     return (
         <div className=''>
             <div className='price cartitem'>
                 <div>
                     <button className='cart-btn' >
-                        <ShoppingCartIcon className='cart-icon'></ShoppingCartIcon>
+                        <Link to='cart'>
+                            <ShoppingCartIcon className='cart-icon' style={{ fontSize: "2rem" }} />
+                            <span style={{ color: "#FF0000", fontSize: "1.5rem", fontWeight: "bolder" }}>({cart.length})</span>
+                        </Link>
                     </button>
                 </div>
             </div>
