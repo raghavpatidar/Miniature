@@ -1,3 +1,143 @@
+
+
+import React, { useState } from "react";
+import { Card } from "react-bootstrap";
+// import { Box}
+
+
+
+const Modal = (props) => {
+
+
+    // const [dishName, setDishName] = useState('');
+
+
+    const item = {
+        itemName: "sandwich",
+        price: 120,
+        veg: true,
+        bestSeller: false,
+    };
+    console.log(item);
+    const [itemDetail, setDetail] = useState({
+        dishName: item.itemName,
+        price: item.price,
+        veg: item.veg,
+        bestSeller: item.bestSeller
+    })
+    // console.log("form data \n" + props.item);
+    const handelChange = (e) => {
+        const name = e.target.name
+        const value = e.target.value
+        setDetail({ ...itemDetail, [name]: value })
+        console.log("item updeted \n" + itemDetail);
+
+    }
+    const handelSubmit = (e) => {
+        e.preventDefault();
+
+        const newItem = { ...itemDetail }
+        setDetail({ ...itemDetail, newItem })
+        console.log(itemDetail);
+        // setPorson({ firstName: '', age: '', email: '' })
+    }
+
+    // const [open, setOpen] = React.useState(props.open);
+    // const handleOpen = () => setOpen(true);
+    // const handleClose = () => setOpen(false);
+    // const item = props.item
+    return (
+        <div className='item'>
+
+            <Card style={{ width: '100%', padding: '2rem' }}>
+                <Card.Body>
+
+
+                    <form className='form' onSubmit={handelSubmit}>
+                        <div className='form-control'>
+                            <label className='form-label' htmlFor='firstName'>DishName : </label>
+                            <input
+                                type='text'
+                                id='dishName'
+                                name='dishName'
+                                value={itemDetail.dishName}
+                                onChange={handelChange}
+                            />
+                        </div>
+                        <div className='form-control'>
+                            <label htmlFor='email'>Price : </label>
+                            <input
+                                type='number'
+                                id='price'
+                                name='price'
+                                value={itemDetail.price}
+                                onChange={handelChange}
+                            />
+                        </div>
+                        <div className="form-check">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                id="flexCheckDefault"
+                                value={itemDetail.veg}
+                                onChange={handelChange}
+                            />
+                            <label className="form-check-label" htmlFor="flexCheckDefault">
+                                veg
+                            </label>
+                        </div>
+                        <div className="form-check">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                value={itemDetail.bestSeller}
+                                id="flexCheckDefault"
+                                onChange={handelChange}
+                            />
+                            <label className="form-check-label" htmlFor="flexCheckDefault">
+                                bestSeller
+                            </label>
+                        </div>
+                        <hr />
+                        <button type='submit' >Save Changes</button>
+                    </form>
+
+                    {/* <Card.Title>Card Title</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                        <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                        </Card.Text> */}
+
+
+
+                    {/* <Card.Button href="#">Card Link</Card.Button> */}
+                    {/* <Card.Link href="#">Another Link</Card.Link> */}
+                </Card.Body>
+            </Card>
+        </div>
+
+    )
+}
+
+export default Modal;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import * as React from 'react';
 // import Box from '@mui/material/Box';
 // import Button from '@mui/material/Button';

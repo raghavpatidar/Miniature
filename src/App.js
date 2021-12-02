@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import Carousel from './components/carousel/Carousel'
 import AdminHome from "./components/Admin/AdminHome";
 import ItemList from './components/HorizontalItemList/ItemList';
+import Edit from './components/Admin/Edit';
 import {
     BrowserRouter,
     Routes,
@@ -29,13 +30,16 @@ function App() {
                     </>
                 } />
             </Routes>
-            <Routes>
+            {/* <Routes>
 
                 <Route path="/admin" element={<><AdminHome></AdminHome></>} />
-            </Routes>
+            </Routes> */}
             <Routes>
                 <Route path="/cart" element={<Cart></Cart>} />
             </Routes>
+            {/* <Routes>
+                <Route path="/edit/:id1/:id2" element={<Edit></Edit>} />
+            </Routes> */}
         </BrowserRouter>
     );
 }

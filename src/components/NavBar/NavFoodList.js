@@ -12,7 +12,7 @@ const NavFoodList = () => {
                     const itemtag = food.name;
                     const id = "#" + itemtag;
                     return (
-                        <Item name={itemtag} key={itemtag} />
+                        <Item name={itemtag} key={food.id} />
                     )
                 })}
             </ul>

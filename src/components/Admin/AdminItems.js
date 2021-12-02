@@ -1,20 +1,10 @@
-import React from "react";
-// import food from "../../data";
-// import foodData from '../../data'
-// import { useState } from "react";
-// import { AddShoppingCartIcon } from '@mui/icons-material';
-// import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-// import logo from '../../assets/cafelogo.png'
+import React, { useState } from "react";
 import veg from '../../assets/veg.png'
 import nonveg from '../../assets/non-veg.png'
-// import bs from '../../assets/bestseller1.png'
 import EditIcon from '@mui/icons-material/Edit';
-// import BasicModal from "./Modal";
-import Box from '@mui/material/Box';
-// import Button from '@mui/material/Button';
-// import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import ChangeForm from "./changeForm,";
+import { useNavigate } from "react-router";
+
+
 
 const style = {
     position: 'absolute',
@@ -29,31 +19,22 @@ const style = {
     boxShadow: 24,
     p: 4,
 };
-
-// const styleM = {
-//     background: 'transparent',
-// }
 const BestSeller = (props) => {
     const isbest = props.best;
     if (isbest) {
-        // return <img src={bs} alt='logo' className='best-icon best-img ' />
         return (
             <i className='best'>Best seller</i>
         )
     }
     return null
 }
-
-
-
 const Items = (props) => {
-
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
-
-
-
+    const [currItem, setcurrItem] = useState();
+    const navigate = useNavigate();
+    const handleOpen = (item) => {
+        setcurrItem(item);
+        navigate(`/edit/${props.id}/${item.itemid}`, { state: currItem });
+    }
     const items = props.item;
     return (
         <div className='container-item'>
@@ -63,39 +44,24 @@ const Items = (props) => {
                 if (!isveg) {
                     srcimg = nonveg
                 }
-                // const bestSeller = item.bestSeller;
-                // const name = item.itemName;
-                // const price = item.price;
-                // console.log("kings data")
-                // console.log(name, price, bestSeller);
                 return (
                     <div>
                         <div className='item'>
                             <div className='itemname'>
                                 <img src={srcimg} alt='logo' className='veg-icon veg-img ' />
-                                <spam className=''> {item.itemName} </spam>
+                                <span className=''> {item.itemName} </span>
                                 <BestSeller best={item.bestseller} key={item.itemName} />
                             </div>
                             <div className='price cartitem'>
                                 <div>
                                     ₹ {item.price}
-                                    <button className='cart-btn' >
+                                    <div className='cart-btn'  >
                                         <div >
-                                            <button onClick={handleOpen} ><EditIcon></EditIcon></button>
-                                            <Modal
-                                                open={open}
-                                                onClose={handleClose}
-                                                aria-labelledby="modal-modal-title"
-                                                aria-describedby="modal-modal-description"
-                                            >
-                                                <Box sx={style}>
-                                                    <div>
-                                                        <ChangeForm item={item} key={idx}></ChangeForm>
-                                                    </div>
-                                                </Box>
-                                            </Modal>
+                                            <button onClick={() => handleOpen(item)}  >
+                                                <EditIcon></EditIcon>
+                                            </button>
                                         </div>
-                                    </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -106,4 +72,7 @@ const Items = (props) => {
         </div>
     )
 }
+
+
+
 export default Items;

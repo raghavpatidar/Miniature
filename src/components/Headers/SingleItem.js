@@ -35,12 +35,12 @@ const SingleItem = (props) => {
             <div className='item'>
                 <div className='itemname'>
                     <img src={srcimg} alt='logo' className='veg-icon veg-img ' />
-                    <spam className=''> {item.itemName} </spam>
+                    <span className=''> {item.itemName} </span>
                     <BestSeller best={item.bestseller} key={item.itemName} />
                 </div>
                 <div className='price cartitem'>
                     <div>
-                        ₹ {item.price.split(".")[0]}
+                        ₹ {item.price}
                         {cart.some((p) => p.itemid === item.itemid) ? (
                             <button
                                 className=" cart-btn"

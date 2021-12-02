@@ -6,6 +6,7 @@ import SingleItem from "../Headers/SingleItem";
 import { Link } from "react-router-dom";
 import NavBar from '../NavBar/NavBar'
 import cartimg from '../../assets/cart4.png'
+import CartNav from '../NavBar/CartNav'
 const Cart = () => {
     const { state: { cart } } = CartState();
 
@@ -30,17 +31,31 @@ const Cart = () => {
             </div>
             <div classs='cartdiv' style={{}}>
                 {check ? (
-                    <div className='container-item'>
+                    <>
+                        <CartNav />
+                        <div className='tags'>
+                            <div className='container-item'>
+                                <div style={{ textAlign: 'center', paddingBottom: '5px' }}>
 
-                        {cart.map((item) => {
-                            const itemtag = item.itemname;
-                            const id = "#" + itemtag;
-                            return (
-                                <SingleItem item={item} key={itemtag} />
-                            )
-                        })}
-                        <p style={{ position: "right" }}>Total :- {total}</p>
-                    </div>
+                                    <p>
+                                        Selected Items :-
+                                    </p>
+                                </div>
+
+                                {cart.map((item) => {
+                                    const itemtag = item.itemname;
+                                    const id = "#" + itemtag;
+                                    return (
+                                        <SingleItem item={item} key={itemtag} />
+                                    )
+                                })}
+                            </div>
+                            <div className=''>
+                                <h1 className='Tags' style={{}}>Have Fun</h1>
+                                {/* <p style={{ position: "right" }}>Total :- {total}</p> */}
+                            </div>
+                        </div>
+                    </>
                 ) : (
                     <EmptyCart />
                 )
