@@ -34,21 +34,22 @@ const Cart = () => {
                     <>
                         <CartNav />
                         <div className='tags'>
-                            <div className='container-item'>
+                            <div className=''>
                                 <div style={{ textAlign: 'center', paddingBottom: '5px' }}>
 
                                     <p>
                                         Selected Items :-
                                     </p>
                                 </div>
-
-                                {cart.map((item) => {
-                                    const itemtag = item.itemname;
-                                    const id = "#" + itemtag;
-                                    return (
-                                        <SingleItem item={item} key={itemtag} />
-                                    )
-                                })}
+                                <div className='container-item'>
+                                    {cart.map((item) => {
+                                        const itemtag = item.itemname;
+                                        const id = "#" + itemtag;
+                                        return (
+                                            <SingleItem item={item} key={itemtag} />
+                                        )
+                                    })}
+                                </div>
                             </div>
                             <div className=''>
                                 <h1 className='Tags' style={{}}>Have Fun</h1>

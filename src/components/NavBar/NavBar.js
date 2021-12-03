@@ -9,7 +9,7 @@ import { CartState } from "../../context/Context";
 const NavBar = () => {
     return (
 
-        <nav className="navbar navbar-expand-sm navbar-light bg-light fixed-top "  >
+        <nav className="navbar navbar-expand-sm navbar-light  fixed-top "  >
             <div className="container-fluid">
                 <Headerlogo />
                 <TogglerButton />
@@ -22,7 +22,7 @@ const Headerlogo = () => {
     return (
 
         <a className="navbar-brand logo" href="#">
-            <div className='item'>
+            <div className=''>
                 <img src={logo} alt='logo' className='logo-icon logo-img ' />
                 <h1  > The Minature Cafe  <p className='small'>Estd. 2019</p> </h1>
             </div>

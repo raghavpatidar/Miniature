@@ -1,145 +1,146 @@
 
 const food = [
+
     {
         id: 1,
         name: "Sandwich",
         items: [
             {
                 itemid: 11,
-                itemName: "VEG SANDWICH",
+                itemName: "Veg Sandwich",
                 price: 60,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 12,
-                itemName: "VEG CHEESE SANDWICH.",
+                itemName: "Veg cheese Sandwich",
                 price: 70,
                 bestseller: true,
                 veg: true
             },
             {
                 itemid: 13,
-                itemName: "CHEESE CHUTNEY SANDWICH",
+                itemName: "Cheese Chutney Sandwich",
                 price: 70,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 14,
-                itemName: "PANEER SANDWICH",
+                itemName: "Panner Sandwich",
                 price: 80,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 15,
-                itemName: "MASALA SANDWICH",
+                itemName: "Masala Sandwich",
                 price: 60,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 16,
-                itemName: "CHEESE GARLIC SANDWICH",
+                itemName: "Cheese Garlic Sandwich",
                 price: 70,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 17,
-                itemName: "BOMBAY KACCHA",
+                itemName: "Bombay Kaccha",
                 price: 40,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 18,
-                itemName: "VEG CORN SANDWICH",
+                itemName: "Veg Corn Sandwich",
                 price: 80,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 19,
-                itemName: "VEG CHEESE CORN SANDWICH",
+                itemName: "Veg Cheese Corn Sandwich",
                 price: 90,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 20,
-                itemName: "VEG CLUB SANDWICH",
+                itemName: "Veg Club Sandwich",
                 price: 110,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 21,
-                itemName: "BUTTER TOAST SANDWICH",
+                itemName: "Butter Toast Sandwich",
                 price: 30,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 22,
-                itemName: "CHILLI PANNER SANDWICH",
+                itemName: "Chilli Pannere Sandwich",
                 price: 110,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 23,
-                itemName: "PIZZA CHEESE SANDWICH",
+                itemName: "Pizza Cheese Sandwich",
                 price: 110,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 24,
-                itemName: "MAXICAN SANDWICH",
+                itemName: "Maxican Sandwich",
                 price: 100,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 25,
-                itemName: "TANDOORI CLUB SANDWICH",
+                itemName: "Tandoori club Sandwich",
                 price: 130,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 26,
-                itemName: "CHEESE BRUST",
+                itemName: "Cheese Brust",
                 price: 120,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 27,
-                itemName: "DOUBLE-DECKER SANDWICH",
+                itemName: "Double-Decker Sandwich",
                 price: 130,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 28,
-                itemName: "CHOCOLATE SANDWICH",
+                itemName: "Chocolate Sandwich",
                 price: 80,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 29,
-                itemName: "CHOCOLATE ROASTED SANDWICH",
+                itemName: "Chocolate Roasted Sandwich",
                 price: 90,
                 bestseller: false,
                 veg: true
             },
             {
                 itemid: 30,
-                itemName: "CHOCOLATE EASSES SANDWICH",
+                itemName: "Chocolate Easses Sandwich",
                 price: 110,
                 bestseller: false,
                 veg: true
@@ -637,6 +638,28 @@ const food = [
             },
         ]
     },
+    {
+        id: 10,
+        name: "Specialities",
+        items: [
+            {
+                itemid: 90,
+                itemName: "Miniature Special Sandwich",
+                price: 140,
+                bestseller: false,
+                veg: true
+            },
+            {
+                itemid: 91,
+                itemName: "Veg Cheese Garlic bread",
+                price: 90,
+                bestseller: false,
+                veg: true
+            },
+
+        ]
+    },
+
 ]
 
 export default food;
