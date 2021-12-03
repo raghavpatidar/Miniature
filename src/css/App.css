@@ -423,9 +423,14 @@ p {
 }
 
 .cart-btn {
-    padding: 0 2rem 0 0rem;
+    padding: 0 0 0 0rem;
     margin-left: 2%rem;
-
+    
+}
+.cart-btn-main{
+    padding: 0 2rem;
+    margin-left: 2%rem;
+    
 }
 
 .cart {
@@ -481,7 +486,7 @@ p {
 
 .container-item {
     background: var(--clr-white);
-    padding: 1rem 1rem;
+    padding: 1rem 0rem;
     /* background: var(--clr-white); */
     /* display: flex; */
     /* justify-content: space-between; */

@@ -37,7 +37,7 @@ const TogglerButton = () => {
         <div className=''>
             <div className='price cartitem'>
                 <div>
-                    <button className='cart-btn' >
+                    <button className='cart-btn-main' >
                         <Link to='cart'>
                             <ShoppingCartIcon className='cart-icon' />
                             <span style={{ color: "", fontWeight: "bolder" }}>{cart.length}</span>
