@@ -7,11 +7,11 @@ import { StylesProvider, useTheme } from "@material-ui/core/styles";
 
 const Content = styled.div`
   margin: auto;
-  max-width: 500px;
+  // max-width: 500px;
 `;
 const AvatarContainer = styled.div`
   display: flex;
-  margin-bottom: 14px;
+  // margin-bottom: 14px;
   & > * {
     margin: 4px;
   }
@@ -19,17 +19,18 @@ const AvatarContainer = styled.div`
 
 const SizedAvatar = styled(Avatar)`
   ${({ size, theme }) => `
-    width: ${theme.spacing(size)}px; 
-    height: ${theme.spacing(size)}px; 
+    // width: ${theme.spacing(size)}px; 
+    // height: ${theme.spacing(size)}px; 
     background: #000000;
-    border: 7px solid pink;
+    border: 3px solid pink;
   `};
 `;
 function SizedAvatars(props) {
   return (
     <AvatarContainer>
-      <SizedAvatar size={10} alt="Evelyn Carnahan">
-        {props.data}
+      <SizedAvatar size={5} alt="Evelyn Carnahan">
+        {/* {props.data} */}
+        <p style={{ fontSize: "0.5rem" }}>{props.data}</p>
       </SizedAvatar>
     </AvatarContainer>
   );

@@ -21,7 +21,7 @@ const NavFoodList = () => {
 }
 const Item = (props) => {
     return (
-        <li className="nav-item ">
+        <li className="nav-item  d-md-block">
             <a className="nav-link active item " aria-current="page" href={"#" + props.name}>{props.name}</a>
         </li>
     )

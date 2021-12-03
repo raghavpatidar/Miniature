@@ -9,11 +9,11 @@ import { CartState } from "../../context/Context";
 const NavBar = () => {
     return (
 
-        <nav className="navbar navbar-light bg fixed-top"  >
+        <nav className="navbar navbar-expand-sm navbar-light bg-light fixed-top "  >
             <div className="container-fluid">
                 <Headerlogo />
                 <TogglerButton />
-                <NavbarSlider />
+                {/* <NavbarSlider /> */}
             </div>
         </nav>
     )
@@ -22,10 +22,10 @@ const Headerlogo = () => {
     return (
 
         <a className="navbar-brand logo" href="#">
-            <div className=''>
+            <div className='item'>
                 <img src={logo} alt='logo' className='logo-icon logo-img ' />
+                <h1  > The Minature Cafe  <p className='small'>Estd. 2019</p> </h1>
             </div>
-            <h1 > The Minature Cafe <br /> <p>Estd. 2019</p> </h1>
 
         </a>
 
@@ -39,18 +39,18 @@ const TogglerButton = () => {
                 <div>
                     <button className='cart-btn' >
                         <Link to='cart'>
-                            <ShoppingCartIcon className='cart-icon' style={{ fontSize: "2rem" }} />
-                            <span style={{ color: "#FF0000", fontSize: "1.5rem", fontWeight: "bolder" }}>({cart.length})</span>
+                            <ShoppingCartIcon className='cart-icon' />
+                            <span style={{ color: "", fontWeight: "bolder" }}>{cart.length}</span>
                         </Link>
                     </button>
                 </div>
             </div>
 
-            <button className="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            {/* <button className="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span className="navbar-toggler-icon"></span>
-            </button>
-        </div>
+            </button> */}
+        </div >
 
     )
 }

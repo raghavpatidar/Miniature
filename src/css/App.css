@@ -73,7 +73,7 @@ body {
     background-color: #EEEEEE;
     color: var(--clr-grey-1);
     line-height: 1.5;
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
 }
 
 ul {
@@ -92,7 +92,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -113,8 +113,8 @@ p {
     /* margin-bottom: 1.25rem; */
     color: var(--clr-grey-5);
     /* padding: 0 0%; */
-    font-weight: bold;
-    font-size: 1.275rem;
+    font-weight: 500;
+    /* font-size: 1.275rem; */
     margin: 0rem;
 }
 
@@ -203,12 +203,12 @@ p {
     color: var(--clr-primary-5);
     letter-spacing: var(--spacing);
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
-.item {
-    padding: 0.5rem 0.8rem;
-}
+/* .item {
+    /* padding: 0.2rem 0.2rem; 
+} */
 
 .item h4 {
     margin-bottom: 0;
@@ -414,11 +414,11 @@ p {
 
 .Tags {
     font-family: 'Comforter Brush', cursive;
-    padding: 2% 0;
-    padding-left: 3%;
-    font-size: 4rem;
+    padding: 2% 0 0 0  ;
+    /* padding-left: 3%; */
+    font-size: 2rem;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     font-weight: bolder;
 }
 
@@ -498,11 +498,11 @@ p {
     /* color:  rebeccapurple; */
     letter-spacing: var(--spacing);
     cursor: pointer;
-    font-size: 2rem;
+    /* font-size: 1rem; */
 }
 
 .item {
-    font-weight: bold;
+    font-weight:600;
     font-style: var(--clr-grey-1);
 }
 
@@ -569,7 +569,7 @@ hr {
     transform: scale(2.8);
     background: transparent;
     /* background-color: #222; */
-    padding: 5%;
+    padding: 0px;
     /* color: orangered; */
 }
 
