@@ -71,7 +71,7 @@ const Cart = () => {
 const EmptyCart = () => {
     return (
         <div className=' emptycart  '>
-            <p className='bold'>Cart is empty Please Add some items to the cart</p>
+            <p className='bold'>Please Add some items to the cart</p>
             <img src={cartimg} alt='empty cart image' />
 
             <hr />
